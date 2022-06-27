@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  width: 100%;
+  height: 100vh;
+}
+section .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+section .container .box {
+  margin: 5% 10px;
+  height: 80vh;
+  border-radius: 100px;
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 1s ease-in;
+}
+section .container .box h3 {
+  padding-top: 70vh;
+  padding-left: 20px;
+}
+
+.active {
+  width: 150vh;
+}
+.top {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 100px;
+  opacity: -1;
+  transition: all 0.5s ease-in;
+}
+.activeTop:hover {
+  opacity: 1;
+}
